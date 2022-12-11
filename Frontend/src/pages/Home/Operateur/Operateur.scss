@@ -1,0 +1,316 @@
+.operateur {
+    .component {
+        .content {
+            display: flex;
+            flex-direction: row;
+            .dashboard {
+                height: 80vh;
+                width: 70vw;
+                .cards {
+                    height: 20vh;
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-flow: wrap;
+                    justify-content: space-around;
+                    .card {
+                        border: 2px solid #3498DB55;
+                        border-radius: 2em;
+                        width: 35vh;
+                        .card-title {
+                            text-align: center;
+                            margin: 5px 0px;
+                            color: var(--primary);
+                            font-family: 'Mulish', sans-serif;
+                            font-size: 16px;
+                        }
+                        .card-content {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: var(--complement);
+                            font-family: 'Mulish', sans-serif;
+                            font-size: 50px;
+                            height: 15vh;
+                        }
+                        .card-footer {
+                            display: flex;
+                            flex-direction: row-reverse;
+                            color: var(--accent);
+                            padding: 5px 20px;
+                        }
+                    }
+                }
+                .container {
+                    position: relative;
+                    margin: 0px 3vw;
+                    border: 2px solid #3498DB55;
+                    border-radius: 2em;
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h1 {
+                        text-align: center;
+                        color: var(--primary);
+                        font-family: 'Mulish';
+                        margin-top: 10px;
+                    }
+                    .search-field {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 20px 0px;
+                        #searchpers {
+                            height: 40px;
+                            border-radius: 2em;
+                            border: 1px solid #ddd;
+                            padding: 10px;
+                            width: 250px;
+                        }
+                    }
+                    .attente {
+                        max-height: 500px;
+                        display: flex;
+                        flex-direction: row;
+                        flex-flow: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        #demande {
+                            border: 1px solid #ddd;
+                            border-radius: 1em;
+                            margin: 20px 15px;
+                            padding: 10px;
+                            width: 350px;
+                            height: 100px;
+                            display: flex;
+                            flex-direction: row;
+                            img {
+                                height: 80px;
+                                width: 80px;
+                                border-radius: 10em;
+                                margin-right: 10px;
+                            }
+                            .demande-content {
+                                display: flex;
+                                flex-direction: column;
+                                p {
+                                    font-family: "Mulish";
+                                    font-size: 14px;
+                                }
+                                a {
+                                    background: var(--primary);
+                                    color: #fefefe;
+                                    text-decoration: none;
+                                    padding: 5px 10px;
+                                    border-radius: 1em;
+                                    width: 100px;
+                                    text-align: center;
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .chat {
+                border: 1px solid #3498DB55;
+                border-radius: 2em;
+                height: 84vh;
+                width: 30vw;
+                margin: 10px 15px;
+
+                .chat-header {
+                    .chat-title {
+                        color: var(--primary);
+                        font-size: 30px;
+                        font-family: 'Mulish', sans-serif;
+                        font-weight: 600;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                }
+
+                .chat-content{
+                    height: 100%;
+                    width: 100%;
+                    padding: 20px;
+                .message {
+                    background: #ddd;
+                    padding: 10px;
+                    border-radius: 1em;
+                    .message-head {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding-bottom: 5px;
+                        img {
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 10em;
+                        }
+                        h4 {
+                            padding: 0px 10px;
+                        }
+                        p {
+                            background: red;
+                            color: #fefefe;
+                            height: 20px;
+                            width: 20px;
+                            text-align: center;
+                            border-radius: 10em;
+                        }
+                    }
+                }
+                .chats {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .chat-heading {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: -10px;
+                        border-bottom: 1px solid #ddd;
+                        padding-bottom: 5px;
+                        width: 100%;
+                        button {
+                            background: none;
+                            border: none;
+                        }
+                        img {
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 10em;
+                        }
+                    }
+                    
+                    .chat-body {
+                        height: 65vh;
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 10px;
+                        .chat-income {
+                            padding: 10px 0px;
+                            p {
+                                float: left;
+                                background: #dedede;
+                                padding: 10px;
+                                border-radius: 0.2em 1em 1em 1em;
+                            }
+                        }
+                        .chat-send {
+                            padding: 10px 0px;
+                            p {
+                                float: right;
+                                background: var(--primary);
+                                color: #fefefe;
+                                padding: 10px;
+                                border-radius: 1em 0.2em 1em 1em;
+                            }
+                        }
+                    }
+                    .chat-footer {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        border-top: 1px solid #ddd;
+                        padding-top: 10px;
+                        .messageText {
+                            width: 300px;
+                            height: 30px;
+                            padding: 5px;
+                        }
+                        .send {
+                            height: 30px;
+                            width: 80px;
+                            background: var(--primary);
+                            border-radius: 0.5em;
+                            border: none;
+                            color: #fefefe;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1190px) {
+    .compte {
+        .component {
+            .content {
+                .dashboard {
+                    .cards {
+                        .card {
+                            width: 30vh;
+                        }
+                    }
+                }
+                .chat {
+                    width: 30vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1018px) {
+    .compte {
+        .component {
+            .content {
+                .dashboard {
+                    .cards {
+                        height: 32vh;
+                        .card {
+                            width: 30vh;
+                        }
+                    }
+                    .container {
+                        .chart {
+                            margin-top: 10px;
+                            height: 50vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:830px) {
+    .compte {
+        .component {
+            .content {
+                .dashboard {
+                    .cards {
+                        height: 25vh;
+                        width: 100vw;
+                        .card {
+                            width: 30vh;
+                        }
+                    }
+                    .container {
+                        .chart {
+                            margin-top: 10px;
+                            height: 60vh;
+                            width: 95vw;
+                        }
+                    }
+                }
+                .chat {
+                    display: none;
+                }
+                .message {
+                    display: inline;
+                }
+            }
+        }
+    }
+}

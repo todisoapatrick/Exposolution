@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;800&display=swap');
+.Navbar {
+    width: 100%;
+    height: 88px;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding: 0 12%;
+    .btn-bars {
+        display: none;
+    }
+    .Navbar-brand {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        img {
+            width: 42px;
+            height: 42px;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+        h2 {
+            font-family: 'Mulish', sans-serif;
+            color: #5B5B5B;
+        }
+        h3 {
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 18px;
+            /* or 129% */
+            letter-spacing: 0.3px;
+            margin-left: 7px;
+            color: rgb(248, 65, 65);
+            span {
+                color: rgb(248, 65, 65);
+            }
+        }
+    }
+    .Navbar-menu {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        z-index: 5;
+        .Navbar-item {
+            /* Subtitle 2 - semibold 14 (18, 0.2px) */
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            padding: 0 20px;
+            text-decoration: none;
+            color: #373F41;
+            position: relative;
+            &:first-child {
+                padding: 0 32px 0 0;
+            }
+            &:last-child {
+                padding: 0 0 0 32px;
+            }
+        }
+    }
+    .Navbar-auth {
+        position: relative;
+        a {
+            &:nth-child(1) {
+                padding-right: 20px;
+                /* Button - bold 14 (18, 0.3px) */
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                /* identical to box height, or 129% */
+                letter-spacing: 0.3px;
+                text-decoration: none;
+                cursor: pointer;
+                color: #3D326C;
+            }
+            &:nth-child(2) {
+                padding: 12px 18px;
+                background: #ff9b21;
+                /* Button - bold 14 (18, 0.3px) */
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+                text-decoration: none;
+                letter-spacing: 0.3px;
+                border-radius: 0.5em;
+                /* Light / White */
+                color: #FFFFFF;
+            }
+        }
+        .btn-switch {
+            position: absolute;
+            top: -12px;
+            right: -60px;
+            padding: 12px;
+            /* Subtitle 2 - semibold 14 (18, 0.2px) */
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            /* identical to box height, or 129% */
+            letter-spacing: 0.2px;
+            /* Light / Black */
+            color: #373F41;
+            background: #FFFFFF;
+            border-radius: 5px;
+            border: 0;
+            outline: 0;
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            &:hover {
+                background: var(--accent);
+                color: #fff;
+            }
+        }
+    }
+    .Handle {
+        position: absolute;
+        z-index: 2;
+        top: 86px;
+        left: 0;
+        width: 100%;
+        -webkit-animation: mobNav 1s;
+        animation: mobNav 1s;
+        .MobileNav {
+            width: inherit;
+            min-height: 300px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            // justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background: var(--complement);
+            a {
+                /* Subtitle 2 - semibold 14 (18, 0.2px) */
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0.2px;
+                padding: 10px 0;
+                text-decoration: none;
+                color: #373F41;
+            }
+            .mav {
+                position: relative;
+                margin-top: 30px;
+                a {
+                    &:nth-child(1) {
+                        padding-right: 20px;
+                        /* Button - bold 14 (18, 0.3px) */
+                        font-family: 'Mulish';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        /* identical to box height, or 129% */
+                        letter-spacing: 0.3px;
+                        text-decoration: none;
+                        cursor: pointer;
+                        color: #3D326C;
+                    }
+                    &:nth-child(2) {
+                        padding: 12px 18px;
+                        background: #F58A03;
+                        /* Button - bold 14 (18, 0.3px) */
+                        font-family: 'Mulish';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 18px;
+                        text-align: center;
+                        text-decoration: none;
+                        letter-spacing: 0.3px;
+                        /* Light / White */
+                        color: #FFFFFF;
+                    }
+                }
+                .btn-switch {
+                    position: absolute;
+                    top: 50px;
+                    left: 40%;
+                    padding: 12px;
+                    /* Subtitle 2 - semibold 14 (18, 0.2px) */
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 18px;
+                    /* identical to box height, or 129% */
+                    letter-spacing: 0.2px;
+                    /* Light / Black */
+                    color: #373F41;
+                    background: #FFFFFF;
+                    border-radius: 5px;
+                    border: 0;
+                    outline: 0;
+                    -webkit-transition: all .3s ease-in-out;
+                    -o-transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        background: var(--accent);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1064px) and (max-width:1241px) {
+    .Navbar {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width:1063px) {
+    .Navbar {
+        padding: 0 5%;
+        .Navbar-auth {
+            display: none;
+        }
+        .Navbar-menu {
+            display: none;
+        }
+        .btn-bars {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            border: 0;
+            outline: 0;
+            background: 0;
+            padding: 10px;
+        }
+    }
+}
+
+@-webkit-keyframes mobNav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes mobNav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

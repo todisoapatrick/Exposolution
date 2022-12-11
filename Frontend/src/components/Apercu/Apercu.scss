@@ -1,0 +1,35 @@
+.Apercu{
+    position: absolute;
+    z-index:1000;
+    height: 100vh;
+    width: 100vw;
+    button {
+        background-color: var(--complement);
+        border: none;
+        color: #fefefe;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 0.5em;
+        font-family: "Mulih", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .apercu{
+        background: rgba(0, 0, 0, 0.351);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .apercu-component{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .apercu-content{
+                background: #fefefe;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

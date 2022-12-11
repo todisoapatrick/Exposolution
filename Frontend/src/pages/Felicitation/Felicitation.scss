@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+.step3 {
+    .heading {
+        width: 100%;
+        height: 80vh;
+        background: #a9c6de;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%);
+        .head-content {
+            width: 50vw;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1 {
+                color: var(--complement);
+                font-size: 40px;
+                font-family: "Mulish";
+            }
+            p {
+                color: #5A5A5A;
+                font-family: "Mulish";
+                font-size: 20px;
+                margin-top: 15px;
+                line-height: 25px;
+            }
+            .head-link {
+                margin-top: 5vh;
+                a {
+                    background: var(--complement);
+                    color: #fefefe;
+                    padding: 10px 30px;
+                    text-decoration: none;
+                    border-radius: 1em;
+                }
+            }
+        }
+        img{
+            width:400px;
+        }
+    }
+}

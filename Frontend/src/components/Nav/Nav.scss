@@ -1,0 +1,80 @@
+.navbar {
+    width: 100vw;
+    height: 60px;
+    background: var(--primary);
+    border-bottom: 1px solid #E2E5E6;
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            justify-content: space-between;
+            width: 100vw;
+            margin: 5px 10vw;
+            .logo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background: #fefefe;
+                padding: 5px 20px;
+                border-radius: 1em;
+                .img-logo {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 0.5em;
+                }
+                p {
+                    font-family: 'Mulish', sans-serif;
+                    font-size: 14px;
+                    font-weight: 800;
+                    margin-left: 5px;
+                    color: #EA4C88;
+                    .expo {
+                        color: #3498DB;
+                    }
+                }
+            }
+            .tools {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                a {
+                    color: #fefefe;
+                    text-decoration: none;
+                    margin: 0px 10px;
+                    font-size: 20px;
+                }
+                .profile {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 2em;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:400px) {
+        .header {
+            .content {
+                .logo {
+                    p {
+                        display: none;
+                    }
+                }
+                .tools {
+                    a {
+                        margin: 0px 3px;
+                        font-size: 18px;
+                    }
+                    .profile {
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 2em;
+                    }
+                }
+            }
+        }
+    }
+}

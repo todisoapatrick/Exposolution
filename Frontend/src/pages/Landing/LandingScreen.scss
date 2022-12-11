@@ -1,0 +1,109 @@
+/* Media screen */
+
+@media screen and (max-width:1460px) {
+    .Landing{
+        .banner{
+            .HeadingText{
+                p{
+                    padding: 0% 20% 0% 0%;
+                }
+            }
+        }
+    }
+}
+// @media screen and (max-width:1280px) {
+//     .Landing{
+//         .banner{
+//             .PersonHeading{
+
+//             }
+//         }
+//     }
+// }
+@media screen and (max-width:1063px) {
+    .Landing{
+        .Navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 12%;
+            .Navbar_menu{
+                display: none;
+            }
+            .Navbar_auth{
+                .btn_connect{
+                    display: none;
+                }
+                .btn-bars {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    border: 0;
+                    outline: 0;
+                    background: #fefefe;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .Landing{
+        .banner{
+            .PersonHeading {
+                display: none;
+            }
+        }
+        .Landing-Text{
+            img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .Landing{
+        .banner{
+            .HeadingText {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:860px){
+    .Landing{
+        .Landing-footer{
+            .ToTop{
+                bottom: 15px;
+                right: 15px;
+                padding: 10px;
+            }
+            h1{
+                font-size: 34px;
+                line-height: 40px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .footer-link{
+                .Link{
+                    a{
+                        padding: 0 5px;
+                        img{
+                            height: 30px;
+                        }
+                    }
+                }
+                a{
+                    font-size: 12px;
+                    img{
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

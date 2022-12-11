@@ -1,0 +1,17 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    textarea {
+        width: 382px;
+        height: 92px;
+        padding: 10px 10px;
+        border: 0;
+        outline: 0;
+    }
+    button {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
